@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlotAnalysis">
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/slotBarchart"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="parking slot's booked history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Slot Nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Car No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerview_slot_analysis_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</ScrollView>
